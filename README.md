@@ -6,7 +6,7 @@ A Simple Static Bot/Agent which will act as a guide for self assessment of proba
 
 This project is made using Google Dialogflow. 
 
-Telgram Link: t.me/r07_CovidBot                                                            
+Telgram Link: https://t.me/r07_CovidBot                                                            
 Web Link: https://bot.dialogflow.com/CovidBot
 
 If you want to run this on your dialogflow console, download this Zip File and Export it in your Dialogflow Console.
