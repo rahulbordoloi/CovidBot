@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--CSS-->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!--Text-->
+
+    <!--<h1 style="color:SlateGray;">This is an HTML Email!</h1>-->
+    <p>Hello {user_name},<br><br> Here is your Detailed COVID-19 Report for {user_country} as you Requested. I have also attached The Prevention and Security measures issued by Indian Govt. PFA<br></p>
+
+    <table id="t01">
+        <tr>
+            <th>Country</th>
+            <th>Total</th>
+            <th>New</th>
+            <th>Active</th>
+            <th>Critical</th>
+            <th>Recovered</th>
+            <th>Deaths</th>
+        </tr>
+        <tr>
+            <td>{user_country}</td>
+            <td>{e_total}</td>
+            <td>{e_new}</td>
+            <td>{e_active}</td>
+            <td>{e_critical}</td>
+            <td>{e_recovered}</td>
+            <td>{e_deaths}</td>
+        </tr>
+    </table>
+
+    <p>
+        Do feel free to contact me at rahulbordoloi24@gmail if you need any further assistance. Have a Nice Day Ahead. :) <br><br> Thanks & Regards,<br> CovidBot
+    </p>
+
+    <!--Attachment-->
+
+    <div class="gmail_chip gmail_drive_chip" style="width:396px;height:18px;max-height:18px;background-color:rgb(245,245,245);padding:5px;font-family:arial;font-weight:bold;font-size:13px;border:1px solid rgb(221,221,221);line-height:1">
+        <a href="https://drive.google.com/file/d/1AUpvh7YKizTuACj12ybSNvVhfoShUfIR/view?usp=sharing" style="display:inline-block;max-width:366px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-decoration-line:none;padding:1px 0px;border:none" target="_blank"
+            data-saferedirecturl="https://www.google.com/url?q=https://drive.google.com/file/d/1nt4z5df9IPyjPcVTeOO87WXA6MuVjK82/view?usp%3Ddrive_web&amp;source=gmail&amp;ust=1582977018192000&amp;usg=AFQjCNEvg8G2w-2-ewCL4cgvBxg6rTzZNw">
+            <img style="vertical-align:bottom;border:none" src="https://ci4.googleusercontent.com/proxy/qYa6_H461C21RR-qYIwSBcI7qqS9WSiFAN0DaF9sKsbdOZ5S3C-vrr7s_W7pzqFo7qGPHn6zXYPCgzf3sLpi6Csr9HA9gNV6rWRnwUrSjrNGKy8ubI-d=s0-d-e1-ft#https://ssl.gstatic.com/docs/doclist/images/icon_10_generic_list.png"
+                class="CToWUd">&nbsp;
+            <span dir="ltr" style="vertical-align:bottom">COVID-19 Prevention MOHFW Guidelines.pdf</span>
+        </a>
+        <img style="display:block;opacity:0.55;float:right">
+    </div>
+
+</body>
+
+</html>
