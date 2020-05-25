@@ -9,7 +9,7 @@
 
 ## Goal
 
-It's Simple Bot/Agent which will act as a guide for self assessment of probable risks from corona virus and increase awareness about the pandemic. It answers any type of questions related to the pandemic and also tells you about the pandemic's statistics when asked for. The Bot can be also asked about myths and rumours related and it also has the capability to mail a detailed report regarding the pandemic to the user. 
+It's a Simple Bot/Agent which will act as a guide for self assessment of probable risks from corona virus and increase awareness about the pandemic. It answers any type of questions related to the pandemic and also tells you about the pandemic's statistics when asked for. The Bot can be also asked about myths and rumours related and it also has the capability to mail a detailed report regarding the pandemic to the user. 
 
 ## Technological Stack
 
@@ -28,19 +28,19 @@ If you're working on a Local Machine, install the dependencies from your termina
  
 For developmental purposes and local hosting I've used ```ngrok``` framework and ```flask``` api. The Coder Editor in which I've developed the code is ```VS Code```.
 
-For Front-End Development,
+<b>For Front-End Development,</b><br>
 
 1.Use the Dialogflow console to develop and design all the neccessary intents and entities according to your purpose.
 
-For Back-End Development and webhook connection,
+<b>For Back-End Development and webhook connection, </b><br>
 
-1. First run your flask app as ```python app.py```
-2. It will now get hosted in your local system with the ip as ```127.0.0.1/5000``` ie hosted on port 5000. (you can explicitely specify the port number though).
+1. Open your terminal, and then run your Flask app as ```python app.py```.
+2. It will now get hosted in your local system with the IP as ```127.0.0.1/5000``` ie hosted on port 5000. (you can explicitely specify the port number though).
 3. Now, run ```ngrok http [port-number]```. In my case, port-number = 5000.
-4. If your deployment is successful, it will provide you with an ip address. Feed that ip address as ```ip-address/webhook``` into your dialogflow fulfillment console.
+4. If your deployment is successful, it will provide you with an IP address. Feed that IP address as ```ip-address/webhook``` into your dialogflow fulfillment console.
 5. Now, test the API using ```POSTMAN```. If it's alright, we're good to go.
 6. Set-up all necessary developments required such as STMP Server, fulfillment texts etc.
-7. After sucessfull completion of steps 1-6, deploy the ```CovidBot``` to a cloud services platform. I've used Pivotal Web Services here. In your cmd, after install of pivotal-cli type ```cf login``` to login into your credentials and then ```cf push``` to push your local repository. After sucessful deployment, a valid ip address of the deployment will be given and then update the fulfillment link in the Dialogflow console as ```[ip-address]/webhook```. 
+7. After sucessfull completion of steps 1-6, deploy the ```CovidBot``` to a cloud services platform. I've used Pivotal Web Services here. In your terminal, after install of pivotal-cli type ```cf login``` to login into your credentials and then ```cf push``` to push your local repository. After sucessful deployment, a valid IP address of the deployment will be given and then update the fulfillment link in the Dialogflow console as ```[ip-address]/webhook```. 
  
 ## Live Build -
 
