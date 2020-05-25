@@ -54,6 +54,7 @@ Refer ```/docs``` directory for the backend files.
 
 ## Demo
 
+![](web.gif)
 <img src="https://github.com/rahulbordoloi/CovidBot/blob/master/ss.JPG" width="800" height="500">
 
 ## Bot Integration
