@@ -15,8 +15,8 @@ It's Simple Bot/Agent which will act as a guide for self assessment of probable 
 
 This project is made using Google Dialogflow and the Language and Framework used for Backend Fulfillment is Python.
 
-For Front-End Development: Dialogflow Console.
-For Back-End Development: Python, Flask, Ngrok, Postman, Restful API, HTML, Javascript, CSS, Bootstrap, kommunicate ide, Google Colab, heroku, git, SMTP services. 
+For Front-End Development: Dialogflow Console. <br>
+For Back-End Development: Python, Flask, Ngrok, Postman, Restful API, HTML, Javascript, CSS, Bootstrap, Pivotal Web Services, Kommunicate.io integration, Google Colab, Heroku, Git, SMTP services. 
 
 ## Dependencies - 
 
@@ -30,19 +30,22 @@ For developmental purposes and local hosting I've used ```ngrok``` framework and
 
 For Front-End Development,
 
-1.Use the Dialogflow console to develop and design all the neccessary intents and entities according to your pupose.
+1.Use the Dialogflow console to develop and design all the neccessary intents and entities according to your purpose.
 
 For Back-End Development and webhook connection,
 
 1. First run your flask app as ```python app.py```
-2. It will now get hosted in your local system with the ip as ```127.0.0.1/5000``` ie hosted on port 5000. (you can explicitely specify the port number though)
+2. It will now get hosted in your local system with the ip as ```127.0.0.1/5000``` ie hosted on port 5000. (you can explicitely specify the port number though).
 3. Now, run ```ngrok http [port-number]```. In my case, port-number = 5000.
 4. If your deployment is successful, it will provide you with an ip address. Feed that ip address as ```ip-address/webhook``` into your dialogflow fulfillment console.
+5. Now, test the API using ```POSTMAN```. If it's alright, we're good to go.
+6. Set-up all necessary developments required such as STMP Server, fulfillment texts etc.
+7. After sucessfull completion of steps 1-6, deploy the ```CovidBot``` to a cloud services platform. I've used Pivotal Web Services here. In your cmd, after install of pivotal-cli type ```cf login``` to login into your credentials and then ```cf push``` to push your local repository. After sucessful deployment, a valid ip address of the deployment will be given and then update the fulfillment link in the Dialogflow console as ```[ip-address]/webhook```. 
  
 ## Live Build -
 
-Telgram Link: https://t.me/r07_CovidBot                                                            
-Web Deployment: https://rahulbordoloi.me/CovidBot/
+Telegram Link: https://t.me/r07_CovidBot                                                            
+Web Deployment: https://rahulbordoloi.me/CovidBot/ <br>
 Dialogflow Web Demo: https://bot.dialogflow.com/CovidBot
 
 If you want to run this on your dialogflow console, download ```CovidBot.zip``` file and export it in your Dialogflow Console.
@@ -53,7 +56,7 @@ If you want to run this on your dialogflow console, download ```CovidBot.zip``` 
 
 ## Bot Integration
 
-To integrate this bot in your webpage, copy the followingJavascript code from below and paste it just above the closing of ```<body>``` tag on every page you want the chat widget to appear.
+To integrate this bot in your webpage, copy the following Javascript code from below and paste it just above the closing of ```<body>``` tag on every page you want the chat widget to appear.
 
 ```
 <!--Chatbot Script-->
@@ -76,10 +79,13 @@ To integrate this bot in your webpage, copy the followingJavascript code from be
                 })(document, window.kommunicate || {});
             </script>
 ```
-Refer https://kommunicate.io if you want to host your own chatbot.
+Refer [kommunicate](https://kommunicate.io) if you want to host your own chatbot.
+
+## References -
+
+* [kommunicate](https://kommunicate.io) for chatbot integration.
+* [rapid-api](https://rapidapi.com) for corona-stats api.
 
 ## Contributing [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
 If you are the helping and contributing one, your efforts and suggestion are always welcomed.
-
-Next Patch - Updating DB and APIs
