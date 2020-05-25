@@ -1,0 +1,634 @@
+/*Table of Content
+
+
+1. Default css
+2. Preloader Css
+3. Navigation area css
+4. Mouse animation css
+5. Banner area css
+13. Contact area css
+14. Footer area css
+
+*/
+
+
+/*===============================
+	1. Google Fonts
+===============================*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600');
+
+/*--- 1. Default css starts ---*/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #333333;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333333;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    letter-spacing: 0;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.section-title h2 span {
+    color: #00B0DC;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    color: #262626;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #00B0DC;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #0000CD;
+}
+
+
+/*--- Default css ends---*/
+
+
+/*-------------- 2. Preloader css starts ---------------*/
+
+.loader_bg {
+    position: fixed;
+    z-index: 9999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+
+.loader:before,
+.loader:after {
+    content: '';
+    border: 1em solid #00B0DC;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+
+.loader:before {
+    animation-delay: .5s;
+}
+
+@keyframes loader {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+
+/*---------- preloader css ends -------------*/
+
+
+/*--- 3. Mouse animation starts---*/
+
+@-webkit-keyframes scroll-ani {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+
+@keyframes scroll-ani {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+
+.mouse-scroll {
+    position: absolute;
+    left: 48%;
+    display: inline-block;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-top: 5%;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.mouse-scroll .mouse {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 60px;
+    margin: 0 auto 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid #ffffff;
+    border-radius: 23px;
+}
+
+.mouse-scroll .mouse .mouse-movement {
+    position: absolute;
+    display: block;
+    top: 29%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    background: #ffffff;
+    border-radius: 50%;
+    -webkit-animation: scroll-ani 2s linear infinite;
+    animation: scroll-ani 2s linear infinite;
+}
+
+
+/*---mouse animation ends---*/
+
+
+/*---------- 4. Nav area css starts -------------*/
+
+.nav-area {
+    height: 65px;
+}
+
+.nav-area.sticky_navigation {
+    background: #fafafa;
+    height: 80px;
+}
+
+.navbar-nav {
+    margin-top: 15px;
+}
+
+.sticky_navigation {
+    -webkit-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    -webkit-box-shadow: 0px 3px 4.6px 0.3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 3px 4.6px 0.3px rgba(0, 0, 0, 0.25);
+}
+
+.sticky_navigation .main-menu {
+    margin-top: 0;
+}
+
+.sticky_navigation .navbar-brand,
+.sticky_navigation .navbar-brand span {
+    color: #000000;
+}
+
+.sticky_navigation .navbar-brand:hover,
+.sticky_navigation .navbar-brand:focus,
+.sticky_navigation .navbar-brand span {
+    color: #262626;
+}
+
+.sticky_navigation .nav li a {
+    color: #262626;
+}
+
+.sticky_navigation .nav li.active a {
+    color: #00B0DC;
+}
+
+.sticky_navigation .nav li.active::after {
+    border-bottom: 1px solid #262626;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.sticky_navigation .navbar-brand:hover {
+    color: #ffffff;
+}
+
+.sticky_navigation .logo span {
+    color: #00b0dc;
+}
+
+.main-menu {
+    -webkit-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    margin-top: 10px;
+}
+
+.navbar {
+    border: 0;
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    padding: 25px 0;
+    text-transform: uppercase;
+    font-size: 25px;
+    display: block;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.logo {
+    padding: 5px;
+    font-size: 32px;
+    letter-spacing: 3px;
+    color: #00b0dc;
+}
+
+.logo span {
+    color: #00b0dc;
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar-right li {
+    display: inline-block;
+    float: none;
+}
+
+.navbar-right li a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.navbar-right li.active a {
+    color: #00B0DC;
+}
+
+.nav>li>a:hover,
+.nav>li>a:active,
+.nav>li>a:focus {
+    background: none;
+}
+
+.navbar-toggle .icon-bar {
+    background: #033D75;
+}
+
+
+/*---------- Nav area css ends -------------*/
+
+
+/*----------- 5. Banner area css starts--------------*/
+
+.banner-area {
+    background-image: url(../images/coronavirus.jpg);
+    /*--edit image--*/
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+}
+
+.banner-area::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    content: '';
+}
+
+.img-area {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
+    display: inline-block;
+}
+
+.banner-area b {
+    font-weight: 100;
+}
+
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.banner-table {
+    display: table;
+    margin: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.banner-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.welcome-text .intro h2 {
+    color: #fff;
+    font-size: 85px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.intro h1 {
+    color: #fafafa;
+    font-size: 18px;
+    font-weight: 100;
+    margin: 0;
+}
+
+.social-icon {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.social-icon ul {
+    margin: 0;
+}
+
+.social-icon ul li {
+    display: inline;
+    padding: 0;
+    margin: 0 5px;
+}
+
+.social-icon ul li a {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+    color: #fff;
+}
+
+.social-icon ul li a:hover {
+    background: #00b0dc;
+}
+
+.ah-headline.clip .ah-words-wrapper::after {
+    background-color: #fff;
+}
+
+.banner-btn {
+    background: transparent;
+    text-decoration: none;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-top: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 25px;
+    border: 2px solid #fafafa;
+    font-weight: bold;
+}
+
+.banner-btn:hover,
+.banner-btn:focus {
+    text-decoration: none;
+    color: #333;
+    background: #fafafa;
+    border-color: #fafafa;
+}
+
+.welcome-text h3 {
+    color: #fff;
+    font-size: 45px;
+}
+
+
+/*---------Banner area css ends--------------*/
+
+
+/*-------------13. Contact area starts -------------*/
+
+.contact-area {
+    background-color: #ffffff;
+}
+
+.contact-area .form-control {
+    border: 2px solid #a2a2a2;
+    box-shadow: none;
+    padding: 6px;
+    border-radius: 0;
+    margin-bottom: 30px;
+}
+
+.right-contact-text {
+    margin-bottom: 25px;
+}
+
+.right-contact-text i {
+    color: #00B0DC;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.contact-area textarea.form-control {
+    border: 2px solid #a2a2a2;
+    padding: 6px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.btn.btn-send {
+    background: #00B0DC;
+    color: #ffffff;
+    border-radius: 0;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.right-contact-text h2 {
+    margin-top: 2px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.right-contact-text p {
+    line-height: 21px;
+    letter-spacing: 2px;
+    font-size: 11px;
+    color: #777;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+/*------------- Contact area ends -------------*/
+
+
+/*--------------16. Footer area starts -------------*/
+
+.footer-area {
+    background: #171717;
+    color: #ffffff;
+    padding: 30px 0;
+}
+
+.footer-area a {
+    color: #00B0DC;
+}
+
+
+/*--------------- Footer area ends -------------*/
