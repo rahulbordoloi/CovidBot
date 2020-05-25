@@ -3,42 +3,80 @@
 [![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 [![Setup Automated](https://img.shields.io/badge/setup-automated-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 
-<img src="https://github.com/rahulbordoloi/CovidBot/blob/master/covid24.jpg" width="800" height="500">
+<i>A Simple Static Bot/Agent which will act as a guide for self assessment of probable risks from corona virus and increase awareness about the pandemic.</i>
 
-A Simple Static Bot/Agent which will act as a guide for self assessment of probable risks from corona virus and increase awareness about the pandemic.
+<img src="https://github.com/rahulbordoloi/CovidBot/blob/master/corona.jpg" width="800" height="500">
 
-This project is made using Google Dialogflow. 
+## Goal
+
+It's Simple Bot/Agent which will act as a guide for self assessment of probable risks from corona virus and increase awareness about the pandemic. It answers any type of questions related to the pandemic and also tells you about the pandemic's statistics when asked for. The Bot can be also asked about myths and rumours related and it also has the capability to mail a detailed report regarding the pandemic to the user. 
+
+## Technological Stack
+
+This project is made using Google Dialogflow and the Language and Framework used for Backend Fulfillment is Python.
+
+For Front-End Development: Dialogflow Console.
+For Back-End Development: Python, Flask, Ngrok, Postman, Restful API, HTML, Javascript, CSS, Bootstrap, kommunicate ide, Google Colab, heroku, git, SMTP services. 
+
+## Dependencies - 
+
+If you're working on a Local Machine, install the dependencies from your terminal with -
+ ```
+ pip install -r requirements.txt
+ ```
+ ## Development -
+ 
+For developmental purposes and local hosting I've used ```ngrok``` framework and ```flask``` api. The Coder Editor in which I've developed the code is ```VS Code```.
+
+For Front-End Development,
+
+1.Use the Dialogflow console to develop and design all the neccessary intents and entities according to your pupose.
+
+For Back-End Development and webhook connection,
+
+1. First run your flask app as ```python app.py```
+2. It will now get hosted in your local system with the ip as ```127.0.0.1/5000``` ie hosted on port 5000. (you can explicitely specify the port number though)
+3. Now, run ```ngrok http [port-number]```. In my case, port-number = 5000.
+4. If your deployment is successful, it will provide you with an ip address. Feed that ip address as ```ip-address/webhook``` into your dialogflow fulfillment console.
+ 
+## Live Build -
 
 Telgram Link: https://t.me/r07_CovidBot                                                            
-Dialogflow Web Deployment: https://bot.dialogflow.com/CovidBot
+Web Deployment: https://rahulbordoloi.me/CovidBot/
+Dialogflow Web Demo: https://bot.dialogflow.com/CovidBot
 
-If you want to run this on your dialogflow console, download this Zip File and Export it in your Dialogflow Console.
+If you want to run this on your dialogflow console, download ```CovidBot.zip``` file and export it in your Dialogflow Console.
+
+## Demo
+
+<img src="https://github.com/rahulbordoloi/CovidBot/blob/master/ss.JPG" width="800" height="500">
 
 ## Bot Integration
-To integrate this bot in your webpage, copy the Javascript code from below and paste it just above the closing of body tag (</body>) on every page you want the chat widget to appear.
+
+To integrate this bot in your webpage, copy the followingJavascript code from below and paste it just above the closing of ```<body>``` tag on every page you want the chat widget to appear.
+
 ```
 <!--Chatbot Script-->
         <script type="text/javascript">
-            /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
-            (function(d, m) {
-                var kommunicateSettings = {
-                    "appId": "233bd45d08e21830167f3c8c53313aa1",
-                    "popupWidget": true,
-                    "automaticChatOpenOnNavigation": true
-                };
-                var s = document.createElement("script");
-                s.type = "text/javascript";
-                s.async = true;
-                s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-                var h = document.getElementsByTagName("head")[0];
-                h.appendChild(s);
-                window.kommunicate = m;
-                m._globals = kommunicateSettings;
-            })(document, window.kommunicate || {});
-        </script>
+                /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+                (function(d, m) {
+                    var kommunicateSettings = {
+                        "appId": "233bd45d08e21830167f3c8c53313aa1",
+                        "popupWidget": true,
+                        "automaticChatOpenOnNavigation": true
+                    };
+                    var s = document.createElement("script");
+                    s.type = "text/javascript";
+                    s.async = true;
+                    s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+                    var h = document.getElementsByTagName("head")[0];
+                    h.appendChild(s);
+                    window.kommunicate = m;
+                    m._globals = kommunicateSettings;
+                })(document, window.kommunicate || {});
+            </script>
 ```
-
-Rough Webpage Deployment - http://rahulbordoloi.me/covid19pro/
+Refer https://kommunicate.io if you want to host your own chatbot.
 
 ## Contributing [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
