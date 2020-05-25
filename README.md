@@ -9,7 +9,7 @@
 
 ## Goal
 
-It's a Simple Bot/Agent which will act as a guide for self assessment of probable risks from corona virus and increase awareness about the pandemic. It answers any type of questions related to the pandemic and also tells you about the pandemic's statistics when asked for. The Bot can be also asked about myths and rumours related and it also has the capability to mail a detailed report regarding the pandemic to the user. 
+It's a Simple Bot/Agent which will act as a guide for self assessment of probable risks from corona virus and increase awareness about the pandemic. It answers any type of questions related to the pandemic and also tells you about the pandemic's statistics when asked for. The Bot can be also be asked about myths and rumours related and it also has the capability to mail a detailed report regarding the pandemic to the user. 
 
 ## Technological Stack
 
