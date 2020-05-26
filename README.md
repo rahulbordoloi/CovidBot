@@ -61,8 +61,8 @@ Refer ```/docs``` directory for the backend files.
 
 ## Bot Integration
 
-To integrate this bot in your webpage, copy the following Javascript code from below and paste it just above the closing of ```<body>``` tag on every page you want the chat widget to appear.
-
+To integrate this bot in your webpage, copy the following Javascript code from below and paste it just above the closing of ```<body>``` tag on every page you want the chat widget to appear. <br>
+<b>Using kommunicate.io -</b>
 ```
 <!--Chatbot Script-->
         <script type="text/javascript">
@@ -85,6 +85,18 @@ To integrate this bot in your webpage, copy the following Javascript code from b
             </script>
 ```
 Refer [kommunicate](https://kommunicate.io) if you want to host your own chatbot.
+
+<b>Using Dialogflow Messenger -</b>
+
+```<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-icon="https://storage.googleapis.com/cloudprod-apiai/8d81cb42-c711-46b5-aaa1-6ca8be92b8b3_x.png"
+  intent="WELCOME"
+  chat-title="CovidBot"
+  agent-id="8ccaee6e-900c-4418-a3c9-a57f231925bb"
+  language-code="en"
+></df-messenger>
+```
 
 ## References -
 
