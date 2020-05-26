@@ -47,6 +47,8 @@ For developmental purposes and local hosting I've used ```ngrok``` framework and
 Telegram Link: https://t.me/r07_CovidBot                                                            
 Web Deployment: https://rahulbordoloi.me/CovidBot/ <br>
 Dialogflow Web Demo: https://bot.dialogflow.com/CovidBot
+Fb Messenger: http://m.me/CovidBot (development phase)
+Twitter Bot: http://twitter.com/DevR07 (development phase)
 
 If you want to run this on your dialogflow console, download ```CovidBot.zip``` file and export it in your Dialogflow Console. <br>
 Refer ```/docs``` directory for the backend files.
