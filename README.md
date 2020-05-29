@@ -106,3 +106,13 @@ Refer [kommunicate](https://kommunicate.io) if you want to host your own chatbot
 ## Contributing [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
 If you are the helping and contributing one, your efforts and suggestion are always welcomed.
+
+## Dnations
+
+[Donate in Patreon](https://patreon.com/rahulbordoloi) <br>
+<div>
+  <a class="donate-with-crypto"
+     href="https://commerce.coinbase.com/checkout/c2be6faa-ef33-40ea-9a18-6054fe6d75a0">
+    Donate with Crypto
+  </a>
+</div>
