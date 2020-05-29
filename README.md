@@ -107,7 +107,7 @@ Refer [kommunicate](https://kommunicate.io) if you want to host your own chatbot
 
 If you are the helping and contributing one, your efforts and suggestion are always welcomed.
 
-## Dnations
+## Donations
 
 [Donate in Patreon](https://patreon.com/rahulbordoloi) <br>
 <div>
