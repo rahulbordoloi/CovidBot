@@ -24,6 +24,7 @@ If you're working on a Local Machine, install the dependencies from your termina
  ```
  pip install -r requirements.txt
  ```
+ 
  ## Development -
  
 For developmental purposes and local hosting I've used ```ngrok``` framework and ```flask``` api. The Coder Editor in which I've developed the code is ```VS Code```.
