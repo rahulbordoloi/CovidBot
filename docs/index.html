@@ -133,6 +133,13 @@
                                     <h6><a href="https://t.me/r07_CovidBot" target="_blank" title="Download Telegram Bot">Download Telegram Bot<i class="fa fa-telegram"></i></a></h6>
                                 </section>
                             </div>
+                            <div>
+                                <a class="donate-with-crypto" href="https://commerce.coinbase.com/checkout/c2be6faa-ef33-40ea-9a18-6054fe6d75a0">
+                                  Donate with Crypto
+                                </a>
+                                <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807">
+                                </script>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -232,24 +239,33 @@
             <script src="js/main.js"></script>
 
             <!--Chatbot js-->
+            
+            <!--Kommunicate.io-->
             <script type="text/javascript">
                 /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
-                (function(d, m) {
-                    var kommunicateSettings = {
-                        "appId": "233bd45d08e21830167f3c8c53313aa1",
-                        "popupWidget": true,
-                        "automaticChatOpenOnNavigation": true
-                    };
-                    var s = document.createElement("script");
-                    s.type = "text/javascript";
-                    s.async = true;
+                (function(d, m)
+                {
+                    var kommunicateSettings = {"appId":"22939516c2430abab558304c3773ef935","popupWidget":true,"automaticChatOpenOnNavigation":true};
+                    var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
                     s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-                    var h = document.getElementsByTagName("head")[0];
-                    h.appendChild(s);
-                    window.kommunicate = m;
-                    m._globals = kommunicateSettings;
-                })(document, window.kommunicate || {});
+                    var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+                    window.kommunicate = m; m._globals = kommunicateSettings;
+                }
+                )(document, window.kommunicate || {});
             </script>
+            
+            <!--Dialogflow Beta Messenger-->
+            <!--<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+            <df-messenger
+                chat-icon="https://storage.googleapis.com/cloudprod-apiai/8d81cb42-c711-46b5-aaa1-6ca8be92b8b3_x.png"
+                intent="WELCOME"
+                chat-title="CovidBot"
+                agent-id="8ccaee6e-900c-4418-a3c9-a57f231925bb"
+                language-code="en"
+            >
+            </df-messenger>-->
+
+            <!--<iframe height="430" width="350" src="https://bot.dialogflow.com/CovidBot"></iframe>-->
 
 </body>
 
