@@ -52,7 +52,8 @@ Fb Messenger: http://m.me/CovidBot (development phase) <br>
 Twitter Bot: http://twitter.com/DevR07 (development phase) <br>
 
 If you want to run this on your dialogflow console, download ```CovidBot.zip``` file and export it in your Dialogflow Console. <br>
-Refer ```/docs``` directory for the backend files.
+
+Refer ```/docs``` directory for the Web-Deployment Files.
 
 
 ## Demo
