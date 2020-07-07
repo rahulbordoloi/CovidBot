@@ -2,6 +2,8 @@
 
 [![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 [![Setup Automated](https://img.shields.io/badge/setup-automated-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
+![](https://img.shields.io/github/last-commit/rahulbordoloi/pypi-publish?style=flat-square)
+[![Open Source Love png2](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 <i>A Simple Static Bot/Agent which will act as a guide for self assessment of probable risks from corona virus and increase awareness about the pandemic.</i>
 
@@ -116,3 +118,7 @@ If you are the helping and contributing one, your efforts and suggestion are alw
     Donate with Crypto
   </a>
 </div>
+
+<br>
+
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/rahulbordoloi/)
