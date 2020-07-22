@@ -66,6 +66,8 @@ Refer ```/docs``` directory for the Web-Deployment Files.
 ![](emailPreview.JPG)
 Email-Preview
 
+For a Brief Descriptive Tour of the Bot, Refer here -> [Video](https://drive.google.com/file/d/1_S9te8Ds85Cn-Pnf9WMIDZx2ywX_8GAC/view?usp=sharing)
+
 ## Bot Integration
 
 To integrate this bot in your webpage, copy the following Javascript code from below and paste it just above the closing of ```<body>``` tag on every page you want the chat widget to appear. <br>
