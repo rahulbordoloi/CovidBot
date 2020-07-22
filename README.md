@@ -63,6 +63,9 @@ Refer ```/docs``` directory for the Web-Deployment Files.
 ![](web.gif)
 <img src="https://github.com/rahulbordoloi/CovidBot/blob/master/ss.JPG" width="800" height="500">
 
+![](emailPreview.JPG)
+Email-Preview
+
 ## Bot Integration
 
 To integrate this bot in your webpage, copy the following Javascript code from below and paste it just above the closing of ```<body>``` tag on every page you want the chat widget to appear. <br>
